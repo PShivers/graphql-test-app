@@ -1,0 +1,26 @@
+[
+  {
+    "id": "col-101",
+    "name": "AMU",
+    "location": "Uttar Pradesh",
+    "rating": 5
+  },
+  {
+    "id": "col-102",
+    "name": "CUSAT",
+    "location": "Kerala",
+    "rating": 4.5
+  },
+  {
+    "id": "Sy8xaA8Eh",
+    "collegeId": "col-2",
+    "firstName": "Tim",
+    "lastName": "George"
+  },
+  {
+    "id": "ByuMWJvE3",
+    "collegeId": "col-101",
+    "firstName": "Susan",
+    "lastName": "George"
+  }
+]
