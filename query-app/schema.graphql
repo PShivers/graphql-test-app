@@ -1,0 +1,33 @@
+type Query {
+  greeting: String
+  sayHello(name: String!): String
+  students: [Student]
+  studentById(id: ID!): Student
+  setFavouriteColor(color: ColorType): String
+}
+
+type Student {
+  id: ID!
+  firstName: String
+  lastName: String
+  fullName: String
+  # the collegeId still seems accessible in the resolver since it on the data, even when it is absent from the schema. odd.
+  # collegeId: ID
+  college: College
+}
+# Note that there is no fullName field in the students.json file.
+# However, we need to fetch the fullname of the student via a query.
+# The fullName, in this case will be a custom field that isn't available with the data source.
+
+type College {
+  id: ID!
+  name: String
+  location: String
+  rating: Float
+}
+
+enum ColorType {
+  RED
+  BLUE
+  GREEN
+}
