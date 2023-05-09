@@ -1,7 +1,7 @@
 type Query {
 	greeting: String
 }
-//esnt
+
 type Mutation {
 	signUp(input: SignUpInput): String
 }
